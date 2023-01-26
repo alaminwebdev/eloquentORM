@@ -23,4 +23,5 @@ Route::get('view', [StudentController::class, 'viewStudent'])->name('getStudent'
 Route::get('update/{id}/{name}', [StudentController::class, 'updateStudent']);
 Route::get('delete/{id}', [StudentController::class , 'deleteStudent']);
 
+Route::get('view/all', [StudentController::class, 'viewWithPhone']);
 
