@@ -10,6 +10,6 @@ class Student extends Model
     use HasFactory;
 
     public function relationWithPhone(){
-        return $this->hasOne(Phone::class);
+        return $this->hasMany(Phone::class);
     }
 }

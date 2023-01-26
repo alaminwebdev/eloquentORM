@@ -11,7 +11,7 @@
         <h1>Eloquent ORM</h1>
         <ul>
             <li><a href="{{ route('getStudent') }}">View</a></li>
-
+            <li><a href="{{ url('view/all') }}">View with phone number</a></li>
         </ul>
     </body>
 </html>

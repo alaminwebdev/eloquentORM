@@ -14,7 +14,13 @@
             <ul>
                 <li>Name : {{ $student->name }}</li>
                 <li>Email :  {{ $student->email }}</li>
-                <li>Phone :  {{ $student->relationWithPhone->phone }}</li>
+                <li>Phone :
+                    <ul>
+                        @foreach($student->relationWithPhone as $phones)
+                        <li>{{ $phones->phone }}</li>
+                        @endforeach
+                    </ul>
+                </li>
                 <li>Created at : {{ $student->created_at }}</li>
                 <li>Updated at : {{ $student->updated_at }}</li>
             </ul>
